@@ -11,15 +11,7 @@ import org.springframework.stereotype.Service;
 public class ListDEService {
     private ListDE leds;
 
-    public void add(Led led) throws ListDEException {
-        leds.add(led);
-    }
-
-    public void addToStartLed(Led led){
-        leds.addToStartLed(led);
-    }
-
-    public void rebootLed() {
-        leds.rebootLeds();
-    }
+public ListDEService() {
+leds = new ListDE();
+}
 }
